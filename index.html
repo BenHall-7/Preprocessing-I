@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
 
   <title>Ben Hall's Resume</title>
 
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+  <p id="test">test</p>
   <header>
     <nav>
       <a href="#">Home</a>
@@ -30,15 +32,17 @@
       <br/>
       <p>> Hey there! I'm a software/web dev in training, hoping to hone my skills to make great apps. I'm strong with multiple languages, including C#, Rust, other C variants, Lua, web markup, etc</p>
       <br/>
-      <p class="align-right">(this is my dog, cutest in the land) -></p>
+      <p class="align-right desktop-only">(this is my dog, cutest in the land) -></p>
     </div>
     
-    <img src="img/Alana.jpeg" alt="An image of the dog looking at the camera"/>
+    <img class="desktop-only" src="img/Alana.jpeg" alt="An image of the dog looking at the camera"/>
   </section>
 
   <section class="work">
-    <h1 id="work-header">> Projects and Experience:</h1>
-    <br/>
+    <div id="work-header">
+      <h1>> Projects and Experience:</h1>
+      <br/>
+    </div>
 
     <section class="content">
       <div class="projects">
