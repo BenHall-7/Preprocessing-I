@@ -144,8 +144,23 @@ a:hover {
   color: yellow;
   border-bottom: yellow dashed 1px;
 }
+li {
+  list-style: square;
+  list-style-position: inside;
+}
 .align-right {
   text-align: right;
+}
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+.blinking {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start;
 }
 body {
   width: 100%;
@@ -159,7 +174,7 @@ body h1 {
   color: yellow;
 }
 body header {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 body header nav {
   display: flex;
@@ -171,12 +186,45 @@ body header nav a {
 body .about {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 body .about div {
   width: 480px;
 }
 body .about img {
-  display: block;
   width: 480px;
+  display: block;
   margin-left: 40px;
+}
+body .work #work-header {
+  text-align: center;
+  border: 1px solid yellow;
+}
+body .work .content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+body .work .content .projects {
+  width: 380px;
+}
+body .work .content .projects a {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid yellow;
+}
+body .work .content .projects a:hover {
+  border: 1px solid yellow;
+}
+body .work .content .experience {
+  margin-left: 40px;
+  width: 580px;
+}
+body footer {
+  text-align: center;
+  border-top: 1px solid yellow;
+  color: white;
 }
