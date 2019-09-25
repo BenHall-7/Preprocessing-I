@@ -61,7 +61,19 @@ html, body {
 
 @bgcol: black;
 @textcol: green;
-@hovercol: lightgreen;
+@emph-col: yellow;
+
+@normal-width: 480px;
+@normal-margin: 40px;
+
+@basic-flex: {
+	display: flex;
+	justify-content: center;
+}
+
+@std_bottom_padding: {
+	padding-bottom: 40px;
+}
 
 a {
 	color: unset;
@@ -70,24 +82,47 @@ a {
 }
 
 a:hover {
-	color: @hovercol;
-	border-bottom: @hovercol dashed 1px;
+	color: @emph-col;
+	border-bottom: emph-col dashed 1px;
+}
+
+.align-right {
+	text-align: right;
 }
 
 body {
 	width: 100%;
 	padding: 0 20px;
+	font-family: VT323, monospace;
+	font-size: 20px;
 	background: @bgcol;
 	color: @textcol;
 
+	h1 { color: @emph-col; }
+
 	header {
+		@std_bottom_padding();
+
 		nav {
-			display: flex;
-			justify-content: center;
+			@basic-flex();
 	
 			a {
 				padding: 20px;
 			}
+		}
+	}
+
+	.about {
+		@basic-flex();
+
+		div {
+			width: @normal-width;
+		}
+
+		img {
+			display: block;
+			width: @normal-width;
+			margin-left: @normal-margin;
 		}
 	}
 }

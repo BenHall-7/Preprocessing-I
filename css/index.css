@@ -141,14 +141,25 @@ a {
   border-bottom: transparent dashed 1px;
 }
 a:hover {
-  color: lightgreen;
-  border-bottom: lightgreen dashed 1px;
+  color: yellow;
+  border-bottom: emph-col dashed 1px;
+}
+.align-right {
+  text-align: right;
 }
 body {
   width: 100%;
   padding: 0 20px;
+  font-family: VT323, monospace;
+  font-size: 20px;
   background: black;
   color: green;
+}
+body h1 {
+  color: yellow;
+}
+body header {
+  padding-bottom: 40px;
 }
 body header nav {
   display: flex;
@@ -156,4 +167,16 @@ body header nav {
 }
 body header nav a {
   padding: 20px;
+}
+body .about {
+  display: flex;
+  justify-content: center;
+}
+body .about div {
+  width: 480px;
+}
+body .about img {
+  display: block;
+  width: 480px;
+  margin-left: 40px;
 }
