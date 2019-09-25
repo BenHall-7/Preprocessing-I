@@ -142,7 +142,7 @@ a {
 }
 a:hover {
   color: yellow;
-  border-bottom: emph-col dashed 1px;
+  border-bottom: yellow dashed 1px;
 }
 .align-right {
   text-align: right;
