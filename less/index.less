@@ -57,3 +57,37 @@ html, body {
     height: 100%;
 }
 
+/*  MY CODE STARTS HERE  */
+
+@bgcol: black;
+@textcol: green;
+@hovercol: lightgreen;
+
+a {
+	color: unset;
+	text-decoration: unset;
+	border-bottom: transparent dashed 1px;
+}
+
+a:hover {
+	color: @hovercol;
+	border-bottom: @hovercol dashed 1px;
+}
+
+body {
+	width: 100%;
+	padding: 0 20px;
+	background: @bgcol;
+	color: @textcol;
+
+	header {
+		nav {
+			display: flex;
+			justify-content: center;
+	
+			a {
+				padding: 20px;
+			}
+		}
+	}
+}
